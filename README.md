@@ -22,6 +22,15 @@ Purpose
 
 ---
 
+### ADCHANGE.ps1
+**Target System:** `svc-ad-01` (AD Hosting Machine)
+
+Purpose
+- Change passwords for all users
+- Manage any account that look suspicious
+
+---
+
 ## Requirements
 
 Both scripts require:
@@ -59,6 +68,13 @@ This allows the script to run without permanently modifying system policy.
 
 Navigate to script location and run: PowerShell -ExecutionPolicy Bypass -File AD-First5.ps1
 
+---
+
+### Step 3 — Execute Script
+
+#### On svc-ad-01
+
+Navigate to script location and run: PowerShell -ExecutionPolicy Bypass -File ADCHANGE.ps1
 
 ---
 
