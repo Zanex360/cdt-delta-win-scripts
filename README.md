@@ -1,7 +1,7 @@
 ## Script Descriptions
 
 ### AD-First5.ps1
-**Target System:** `svc-ad-01` (Domain Controller)
+**Target System:** `svc-ad-01` (AD Hosting Machine)
 
 Purpose:
 - Identify unauthorized privileged users
