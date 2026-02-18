@@ -43,4 +43,11 @@ auditpol /set /subcategory:"Account Logon" /success:enable /failure:enable
 Write-Host "`n[7] Recent Logins:"
 Get-EventLog Security -InstanceId 4624 -Newest 10
 
+Write-Host "`n[8] Recent TGT Requests:"
+Get-EventLog Security -InstanceId 4768 -Newest 10
+
+Write-Host "`n[9] Purging Kerberos Tickets:"
+klist purge
+klist -li 0x3e7 purge
+
 Write-Host "`n=== Completed ==="
